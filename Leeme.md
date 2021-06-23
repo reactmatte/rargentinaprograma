@@ -1,6 +1,6 @@
 # rargentinaprograma
 
-En este repositorio estoy subiendo los archivos del curso de r/ARGENTINAPROGRAMA de Fabricio Sodano (y colaboradores) 
+En este repositorio estoy subiendo los archivos del curso de r/ARGENTINAPROGRAMA
 Este va a incluir los repositorios del curso con los ejercicios y ejercicios resueltos, a medida que voy aprendiendo a manejar correctamente Github.
 
 # # Agradecimientos
