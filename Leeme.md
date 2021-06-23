@@ -9,14 +9,19 @@ Desde ya y antes que nada muchisimas gracias a Francisco Sodano, a los colaborad
 -Fuente y redes-
 
 Pagina: https://argentinaprograma.com/
+
 Github: https://github.com/r-argentina-programa
+
 Youtube: https://www.youtube.com/channel/UCXfQLgiBQPIzBp8-nRsG0KA 
+
 Twitch: https://www.twitch.tv/rargentinaprograma/
+
 Slack: https://rargentinaprograma.slack.com/join/shared_invite/zt-m1r04i92-AiQfVv78XYYcd9pUmDEVag#/shared-invite/email
 
 Github de Francisco Sodano: https://github.com/fsodano
 
 Esta es una traduccion de MusesCodeJSsu (Tanya Butenko).
+
 Github: https://github.com/muses-code-js/js-intro-workshop 
 
 
