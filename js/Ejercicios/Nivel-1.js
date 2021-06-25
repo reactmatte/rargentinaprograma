@@ -107,3 +107,11 @@ function LAFUNCION() {
         console.log(`Perdón, no conozco ese operador... ¿NO VES QUE SOLO SOY UNA SIMPLE FUNCION BASICA?`)
     }
 }
+
+// TAREA: usando el operador !, Intentá invertir una variable (de true a false, o de false a true) e imprimí el
+// resultado en la consola.
+
+let VARIABLE_TRES = true;
+let VARIABLE_CUATRO = false;
+
+console.log(`VARIABLE_TRES ES TRUE, PERO LO INVERTIMOS: ${!VARIABLE_TRES}`)
