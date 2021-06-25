@@ -14,8 +14,8 @@ function MENSAJE(TEXTO){
 
 // TAREA: Creá 2 variables indefinidas, llamadas numeroUno y numeroDos.
 
-let numeroUno, numeroDos;
-console.log(`Variables indefinidas ${numeroUno} ${numeroDos}`);
+let NUMERO_ALEATORIO, NUMERO_AL_AZAR;
+console.log(`Variables indefinidas ${NUMERO_ALEATORIO} ${NUMERO_AL_AZAR}`);
 
 // TAREA: Crear 3 variables:
 // * 1ra variable llamada 'diez' con valor 10
@@ -59,14 +59,10 @@ function RESTAR_REST(...NUMERO){
     })
 }
 
+// TAREA: Creemos 2 funciones más: dividir y multiplicar.
+
 function MULTIPLICACION(NUMERO_UNO, NUMERO_DOS){
     return NUMERO_UNO * NUMERO_DOS
-}
-
-function MULTIPLICACION_REST(...NUMERO){
-    return NUMERO.reduce((ACUMULADOR, VALOR_ACTUAL) => {
-       return ACUMULADOR * VALOR_ACTUAL
-    })
 }
 
 function DIVISION(NUMERO_UNO, NUMERO_DOS){
@@ -86,12 +82,28 @@ function POTENCIACION(BASE, EXPONENTE){
 // Paso 3 - Crear una condición if/else basada en el operador que tenemos.
 // Si tenemos un operador igual a '+', llamamos la función 'sumar' con nuestros números (las variables del paso 2).
 // Si no, tenemos que llamar la función 'restar', con nuestros números (las variables del paso 2).
-// No se olviden de hacer un console.log para ver el resultado!
 
-let OPERADOR = prompt(`Operador aritmetico`)
-let NUMERO_UNO;
-let NUMERO_DOS;
+// TAREA: Reescribamos el if-else que teníamos y extendámolos, agregando:
+//       'else if' el 'operador' es igual a '-' - llamar a la función 'restar'
+//       'else if' el 'operador' es igual a '/' - llamar a la función 'dividir'.
+//       'else if' el 'operador' es igual a '*' - llamar a la función 'multiplicar'.
+//       else console.log - "Perdón, no conozco ese operador".
 
-if (OPERADOR === "+") {
-    SUMAR    
+function LAFUNCION() {
+    OPERADOR = prompt("Seleccione su operador aritmetico pls")
+    let VARIABLE_UNO = 20;
+    let VARIABLE_DOS = 40;
+    if (OPERADOR === "+") {
+        return SUMAR_REST(VARIABLE_UNO, VARIABLE_DOS)
+    }else if (OPERADOR === "/") {
+        return DIVISION(VARIABLE_UNO, VARIABLE_DOS)
+    }else if (OPERADOR === "*"){
+        return MULTIPLICACION(VARIABLE_UNO, VARIABLE_DOS)
+    }else if (OPERADOR === "-"){
+        return RESTAR_REST(VARIABLE_UNO, VARIABLE_DOS)
+    }else if (OPERADOR === "**"){
+        return POTENCIACION(VARIABLE_UNO, VARIABLE_DOS)
+    }else{
+        console.log(`Perdón, no conozco ese operador... ¿NO VES QUE SOLO SOY UNA SIMPLE FUNCION BASICA?`)
+    }
 }
