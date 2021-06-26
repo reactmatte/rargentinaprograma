@@ -378,14 +378,6 @@ function calcFunc(operator, numberOne, numberTwo) {
 // TAREA: Creemos 2 funciones más: dividir y multiplicar.
 
 
-function multiply(numberOne, numberTwo) {
-    return numberOne * numberTwo
-}
-
-function division (numberOne, numberTwo) {
-    return numberOne / numberTwo
-}
-
 
 // TAREA: Reescribamos el if-else que teníamos y extendámolos, agregando:
 //       'else if' el 'operador' es igual a '-' - llamar a la función 'restar'

@@ -42,12 +42,6 @@
 // TAREA: Crea tu propio array, llamado comidasFavoritas, y escribi dentro algunas
 //       cosas que te gustan.
 
-let comidasFavoritas = [`milanesa`, `sorrentinos`, `pizza`, `asado`, `wok`]
-
-
-
-
-
 /*
     Tamaño del Array
     ================
@@ -63,10 +57,6 @@ let comidasFavoritas = [`milanesa`, `sorrentinos`, `pizza`, `asado`, `wok`]
 
 // TAREA: Verifique cuántos valores tiene en su array comidasFavoritas.
 // imprimi utilizando console.log el resultado.
-
-
-console.log(`the length of the array "comidasFavoritas" is: ${comidasFavoritas.length}`)
-
 
 
 /*
