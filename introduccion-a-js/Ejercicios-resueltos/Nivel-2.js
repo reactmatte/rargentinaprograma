@@ -46,3 +46,52 @@ const ANIMALES = [`OVEJA`, `PATO`, `ARAÑA`, `CARPINCHO`]
 ANIMALES.push(`JOAQUIN`)
 
 console.log(ANIMALES)
+
+// TAREA: Usando un bucle 'while', decile a tu computadora que registre los números de
+//       diez a uno.
+
+function EL_WHILE(NUMERO) {
+    while (NUMERO >= 1) {
+        console.log(NUMERO--)
+    }    
+}
+
+// TAREA: Imprimí cada 3er número del 3 al 22 usando un 'bucle for'.
+
+function EL_FOR() {
+    for (let i = 3; i <= 22; i++) {
+        if (i % 3 === 0) {
+            console.log(i)
+        }
+    }    
+}
+
+// TAREA: Probalo con tu comidasFavoritas array.
+
+function ITERADOR() {
+    for (let i = 0; i <= COMIDAS_FAVORITAS.length; i++) {
+        console.log(COMIDAS_FAVORITAS[i])    
+    }
+}
+
+// TAREA: Ha llegado el momento de un ejercicio clásico: 'FizzBuzz'.
+// Cuenta del 1 al 50 e imprime los números:
+//
+// * Si un número es múltiplo de tres, imprime 'Fizz'.
+// * Si es un múltiplo de 5, imprime 'Buzz'.
+// * Si es un múltiplo de 3 y 5, imprime 'FizzBuzz'.
+// * Para todo lo demás, imprime el número mismo.
+
+function FIZZBUZZ() {
+    for (let i = 1; i <= 50; i++) {
+        if (i % 3 === 0 && i % 5 === 0){
+            console.log(`${i} Fizzbuzz`)
+        }else if(i % 5 === 0){
+            console.log(`${i} Buzz`)
+        }else if(i % 3 === 0){
+            console.log(`${i} Fizz`)
+        }else{
+            console.log(i)
+        }
+    }
+}

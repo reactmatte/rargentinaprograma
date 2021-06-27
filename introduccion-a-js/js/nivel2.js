@@ -239,18 +239,6 @@ console.log(animales)
 // TAREA: Usando un bucle 'while', decile a tu computadora que registre los números de
 //       diez a uno.
 
-
-function theWhile (number){
-
-    while (number > 0) {
-        console.log(number)
-        number--
-        
-    }
-}
-
-
-
 /*
     Bucles for (para)
     ==========
