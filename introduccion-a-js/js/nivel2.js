@@ -256,14 +256,6 @@ console.log(animales)
 
 // TAREA: Imprimí cada 3er número del 3 al 22 usando un 'bucle for'.
 
-function theFor() {
-    for (i = 0; i <= 22; i++){
-        i % 3 == 0 ? console.log(i) : false 
-    }    
-}
-
-
-
 
 /*
     Iterando a traves de Arrays
@@ -287,15 +279,6 @@ function theFor() {
 */
 
 // TAREA: Probalo con tu comidasFavoritas array.
-function iterateArr(arr) {
-    for (i = 0; i < comidasFavoritas.length; i++) {
-        console.log(comidasFavoritas[i])   
-    }    
-}
-
-
-
-
 
 /*
     Bucles y Logica
@@ -333,15 +316,6 @@ function iterateArr(arr) {
 // 10% 3 = 1 - en 10 tenemos 3 * 3 + 1
 // 16% 4 = 0 - en 16 tenemos 4 * 4
 // 19% 4 = 3 - en 19 tenemos 4 * 4 + 3, etc.
-
-function fizzBuzz(cycle) {
-    for (let index = 0; index < cycle ; index++) {
-        let text = ``
-        index % 3 == 0 ? text = text + `Fizz` : false
-        index % 5 == 0 ? text = text + `Buzz` : false
-        console.log(text || index)
-    }
-}
 
 //////////////////////////////////////////////////////////////////////////////
 // ¡Felicidades! ¡Has terminado el Nivel 2 de JavaScript Básico!            //

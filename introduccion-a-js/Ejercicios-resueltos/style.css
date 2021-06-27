@@ -1,0 +1,27 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #cfcdc9;
+}
+h1{
+    background: #bd2d6c;
+    width: 100%;
+    border: #cfcdc9;
+}
+h2{
+    position: center;
+}
+body{
+    margin: 40px;
+    width: 80%;
+    background: #1e2127;
+}
+div{
+    background: #292a2d;
+}
+footer{
+    background: #1f2425;
+}
+a{
+    color: #ff4530;
+}
