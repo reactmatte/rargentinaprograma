@@ -1,4 +1,11 @@
 *{
+    --color-background: #1e2127;
+    --color-menu: #161719;
+    --color-body: #292a2d;
+    --color-header: #c42b6f;
+    --color-font: #e3e3e3;
+    --color-btn: #ff4530;
+    
     margin: 0px;
     padding: 0px;
     color: #cfcdc9;
