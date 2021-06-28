@@ -24,9 +24,9 @@ function CALCULAR_EDAD(){
 
 
 
-const MESES_DEL_ANIO = 11.5;
-const DIAS_LABORALES_AL_MES = 23;
-const HORAS_LABORALES_DIARIA = 8;
+const MESES_DEL_ANIO = 12
+const DIAS_LABORALES_AL_MES = 23;  //descontando sabados y domingos
+const HORAS_LABORALES_DIARIAS = 9;  //descontando la hora para comer
 
 function ANUAL_A_MENSUAL(ANUAL) {
     return ANUAL / MESES_DEL_ANIO
@@ -37,7 +37,7 @@ function MENSUAL_A_DIARIO(MENSUAL) {
 }
 
 function DIARIO_A_POR_HORA(DIARIO) {
-    return DIARIO / HORAS_LABORALES_DIARIA
+    return DIARIO / HORAS_LABORALES_DIARIAS
 }
 
 function OBTENER_SALARIO_ANUAL(){
