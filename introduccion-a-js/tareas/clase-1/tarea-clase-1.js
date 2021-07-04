@@ -22,7 +22,7 @@ function CALCULAR_EDAD(){
 // Preguntar el salario mensual y calcular el anual
 // diario... semanal, por hora. etc.
 
-
+let SALARIO_ANUAL = +prompt(`¿Cuanto ganas anualmente?`, 1440000);
 
 const MESES_DEL_ANIO = 12
 const DIAS_LABORALES_AL_MES = 23;  //descontando sabados y domingos
@@ -33,20 +33,16 @@ function ANUAL_A_MENSUAL(ANUAL) {
 }
 
 function MENSUAL_A_DIARIO(MENSUAL) {
-    return MENSUAL / DIAS_DEL_MES;
+    return MENSUAL / DIAS_LABORALES_AL_MES;
 }
 
 function DIARIO_A_POR_HORA(DIARIO) {
     return DIARIO / HORAS_LABORALES_DIARIAS
 }
 
-function OBTENER_SALARIO_ANUAL(){
-    let SALARIO_ANUAL = +prompt(`¿Cuanto ganas anualmente?`);
-    
-    console.log(`Tu salario mensual es:${ANUAL_A_MENSUAL(SALARIO_ANUAL)}`);
-    console.log(`Tu salario diario es:${MENSUAL_A_DIARIO(ANUAL_A_MENSUAL)}`);
-    console.log(`Tu salario por hora es: ${DIARIO_A_POR_HORA(MENSUAL_A_DIARIO)}`)
-}
+console.log(`Tu salario mensual es:${ANUAL_A_MENSUAL(SALARIO_ANUAL)}`);
+console.log(`Tu salario diario es:${MENSUAL_A_DIARIO(ANUAL_A_MENSUAL)}`);
+console.log(`Tu salario por hora es: ${DIARIO_A_POR_HORA(MENSUAL_A_DIARIO)}`)
 
 
 
