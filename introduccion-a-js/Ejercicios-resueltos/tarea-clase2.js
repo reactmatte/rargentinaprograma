@@ -44,4 +44,3 @@ function OBTENER_OPERADOR(params) {
 }
 
 //https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/template_strings
-
