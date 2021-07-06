@@ -55,9 +55,10 @@ function FIZZBUZZ() {
 // 7 / 3 =  2,3...
 
 const EL_ARRAY = [10,5,4,2,8]
-function CALCULAR_PROMEDIO_EN_ARRAY(ARRAY){
-    function SUMA_DE_ELEMENTOS(ACUMULADOR, VALOR_ACTUAL) {
-        ACUMULADOR + VALOR_ACTUAL
+function CALCULAR_PROMEDIO_EN_ARRAY(){
+    for (let i = 0; i < EL_ARRAY.length; i++) {
+        const element = EL_ARRAY[i];
+        
     }
     PROMEDIO = ARRAY.reduce(SUMA_DE_ELEMENTOS());
     console.log(`El promedio es ${PROMEDIO}`)
