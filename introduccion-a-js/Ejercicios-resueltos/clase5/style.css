@@ -1,0 +1,67 @@
+*{
+    --color-background: #1e2127;
+    --color-menu: #161719;
+    --color-body: #292a2d;
+    --color-header: #c42b6f;
+    --color-font: #e3e3e3;
+    --color-btn: #ff4530;
+    padding: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Noto Sans', sans-serif;
+    color: #cfcdc9;
+}
+body{
+    background: var(--color-background);
+}
+
+.cuerpo{
+    height: auto;
+    margin: 50px;
+    width: 900px;
+}
+
+#texto{
+    background: var(--color-menu);
+    width: auto;
+    padding: 50px;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+    a{
+        color: var(--color-btn);
+    }
+
+    #formularios{
+        width: auto;
+        max-width: 900px;
+        height: 100px;
+        padding-top: 20px;
+        padding-left: 5px;
+        }
+
+        #boton-calcular{
+            background: var(--color-header);
+            font-size: 20px;
+            width: 31%;
+            height: 100px;
+            border-radius: 5px;
+        }
+        
+        .salario{
+            background: var(--color-body);
+            color: var(--color-font);
+            height: 100px;
+            max-height: 100px;
+            width: 32%;
+            max-width: 300px;
+            margin: 5px;
+            border-radius: 5px;
+            font-size: 20px;
+        }
+
+
+    
+
+
