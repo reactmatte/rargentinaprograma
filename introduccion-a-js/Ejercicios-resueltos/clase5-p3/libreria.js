@@ -2,8 +2,8 @@
 export function crearElemento( elem, atributo = {}) {
     const elemento = document.createElement(elem);
     //elemento.id = atributo.id;
-    elemento.classList.add(atributo.className)
     elemento.type = atributo.type
+    elemento.classList.add(atributo.className)
     elemento.placeholder = atributo.placeholder
 
     return elemento
