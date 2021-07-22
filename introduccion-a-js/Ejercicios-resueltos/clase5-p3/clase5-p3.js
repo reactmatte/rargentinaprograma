@@ -9,10 +9,12 @@ function agregarContadores() {
     let inputHoras = crearElemento("input", {type: "number" , className: "input-horas" , placeholder: "Ingresa las horas"})
     render(inputHoras, $inputsTiempo)
 
-    let inputMinutos = crearElemento("input", {type: "number", className: "input-minutos", placeholder: "Minutos"})
+    let inputMinutos = crearElemento("input",
+     {type: "number", max: 59 , className: "input-minutos", placeholder: "Minutos"})
     render(inputMinutos, $inputsTiempo)
 
-    let inputSegundos = crearElemento("input", {type: "number" , className: "input-segundos" , placeholder: "Segundos"})
+    let inputSegundos = crearElemento("input",
+     {type: "number", max: 59 , className: "input-segundos" , placeholder: "Segundos"})
     render(inputSegundos, $inputsTiempo)
 }
 
@@ -50,14 +52,30 @@ $botonCalcular.onclick = function() {
     let $minutos = document.querySelectorAll(".input-minutos");
     let $segundos = document.querySelectorAll(".input-segundos");
     
-    for (let i = 0; i < $horas.length; i++) {
+    let acumuladorHoras = 0;
+    let acumuladorMinutos = 0;
+    let acumuladorSeguntos = 0;
 
-        console.log(`En el input ${i} es la hora: ${+$horas[i].value}`)
+    for (let i = 0; i < $horas.length; i++) {
+        acumuladorHoras += +$horas[i].value  
     }
     for (let i = 0; i < $minutos.length; i++) {
-        console.log(`En el input ${i} es el minuto: ${+$minutos[i].value}`)
+        acumuladorMinutos += +$minutos[i].value
     }
     for (let i = 0; i < $segundos.length; i++) {
-        console.log(`En el input ${i} es el segundo: ${+$segundos[i].value}`)
+        acumuladorSeguntos += +$segundos[i].value;
     }
+    acumuladorHoras += Math.trunc(acumuladorMinutos / 60);
+    acumuladorMinutos %= 60;
+    acumuladorMinutos += Math.trunc(acumuladorSeguntos / 60);
+    acumuladorSeguntos %= 60;
+    
+    mensajeTiempoTotal(acumuladorHoras, acumuladorMinutos, acumuladorSeguntos)
+}
+
+function mensajeTiempoTotal(horas, minutos, segundos) {
+    let mensaje = document.createElement("h2")
+    mensaje.textContent = `El tiempo total es ${horas}:${minutos}:${segundos}`
+    const $formulario = document.querySelector("#formularios")
+    render(mensaje, $formulario)    
 }
