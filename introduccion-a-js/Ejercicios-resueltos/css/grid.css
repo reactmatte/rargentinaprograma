@@ -1,0 +1,10 @@
+main{
+    display: grid;
+    grid-column: 800px 200px;
+    grid-row: 3;
+    grid-gap: 20px;
+}
+form{
+    grid-column: auto;
+    grid-row: 3fr;
+}

@@ -1,86 +1,31 @@
-*{
-    --color-background: #1e2127;
-    --color-menu: #161719;
-    --color-body: #292a2d;
-    --color-header: #c42b6f;
-    --color-font: #e3e3e3;
-    --color-btn: #ff4530;
-    padding: 0px;
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Noto Sans', sans-serif;
-    color: #cfcdc9;
-}
-body{
+@import url("../css/variables.css");
+@import url("../css/layout.css");
+@import url("../css/grid.css");
+
+.input-horas{
     background: var(--color-background);
+    height: 60px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
 }
-    main{
-        background: center;
-        background: var(--color-menu);
-        width: 1000px;
-        height: auto;
-        margin: 40px;
-        padding: 40px;
-    }
-        #formularios{
-            background: var(--color-background);
-            width: 1000px;
-            height: auto;
-            margin: 5px;
-            margin-top: 40px;
-            border-radius: 5px;
-            font-size: 20px;
-            text-align: center;
-        }
-
-            .botones{
-                background: var(--color-header);
-                width: 22%;
-                height: 100px;
-                margin: 5px;
-                border-radius: 5px;
-                font-size: 20px;
-                text-align: center;
-            }
-            label{
-                font-size: 25px;
-                text-align: center;
-            }
-            #input-videos{
-                background: var(--color-background);
-
-            }
-
-        .tiempo-videos{
-            width: 1000px;
-            height: auto;
-            padding: 1%;
-
-        }
-            .input-horas{
-                background: var(--color-background);
-                width: 31%;
-                height: 60px;
-                margin: 5px;
-                border-radius: 5px;
-                font-size: 20px;
-                text-align: center;
-            }
-            .input-minutos{
-                background: var(--color-background);
-                width: 31%;;
-                height: 60px;
-                margin: 5px;
-                border-radius: 5px;
-                font-size: 20px;
-                text-align: center;
-            }
-            .input-segundos{
-                background: var(--color-background);
-                width: 31%;;
-                height: 60px;
-                margin: 5px;
-                border-radius: 5px;
-                font-size: 20px;
-                text-align: center;
-            }
+.input-minutos{
+    background: var(--color-background);
+    height: 60px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+.input-segundos{
+    background: var(--color-background);
+    height: 60px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 20px;
+    text-align: center;
+}

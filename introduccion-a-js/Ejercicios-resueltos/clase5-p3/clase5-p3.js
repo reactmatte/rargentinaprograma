@@ -77,5 +77,5 @@ function mensajeTiempoTotal(horas, minutos, segundos) {
     let mensaje = document.createElement("h2")
     mensaje.textContent = `El tiempo total es ${horas}:${minutos}:${segundos}`
     const $formulario = document.querySelector("#formularios")
-    render(mensaje, $formulario)    
+    render(mensaje, $inputsTiempo)    
 }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 5 - Tarea 2</title>
+</head>
+<body>
+    <style>
+        @import url("../css/variables.css");
+        @import url("../css/layout.css");
+        @import url("../css/grid.css");
+    </style>
+    <main>
+        <div class="header">r/argentinaprograma Clase 5- Tarea 2</div>
+        <h2>Tarea:</h2>
+        <p>
+            Creá un formulario que capture el primer nombre, segundo nombre, apellido/s y edad del usuario
+            también vamos a crear un h1> que diga Bienvenido!
+            vas a crear un botón de acción que una vez que lo apretás, va a
+            mostrar toda la información junta en un campo de texto
+            Y va a cambiar el h1> para decir "Bienvenido, nombreDeUsuario"!
+        </p>
+        <hr>
+        <form>
+            <h1 id="mensaje-bienvenida">¡BIENVENIDO!</h1>
+            <input type="text" placeholder="Primer nombre" class="formularios" id="nombre-primer">
+            <input type="text" placeholder="Segundo nombre" class="formularios" id="nombre-segundo">
+            <input type="text" placeholder="Apellido" class="formularios" id="apellido">
+            <input type="number" placeholder="Edad" class="formularios" id="edad">
+            <input type="reset" class="botones" id="boton-reset" value="Limpiar">
+            <input type="button" class="botones" id="boton-enviar" value="Enviar">
+        </form>
+    </main> 
+    
+    <script>
+
+        const $buttonReset = document.querySelector("#boton-reset");
+        const $buttonSend = document.querySelector("#boton-enviar");
+        const $message = document.querySelector("#mensaje-bienvenida")
+
+        function getData(userFirstName, userSecondName, userLastName, userAge) {
+            $message.textContent = `¡Bienvenido ${userFirstName} ${userSecondName} ${userLastName}!, tenes: ${userAge} años`    
+        }
+
+        $buttonSend.onclick = function () {
+            const $userFirstName = document.querySelector("#nombre-primer").value;
+            const $userSecondName = document.querySelector("#nombre-segundo").value;
+            const $userLastName = document.querySelector("#apellido").value;
+            const $userAge = +document.querySelector("#edad").value;
+
+            getData($userFirstName, $userSecondName, $userLastName, $userAge)
+            return false
+        }
+    </script>
+</body>
+</html>

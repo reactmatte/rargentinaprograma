@@ -10,9 +10,14 @@
     
 </head>
 <body id="fondo">
-
+    <style>
+        @import url("../css/variables.css");
+        @import url("../css/layout.css");
+        @import url("../css/grid.css");
+    </style>
     
     <main class="cuerpo">
+        <div class="header">r/argentinaprograma Clase 5- Tarea 1</div>
         <div id="texto">
             <ul>
                 <li>
@@ -50,14 +55,27 @@
             </h3>
         </div>
 
-        <form id="formularios">
-            <input type="number" name="" class="salario" id="salario-anual" placeholder="Ingrese su salario anual">
-            <input type="text" class="salario" id="salario-mensual" disabled placeholder="Salario mensual">
-            <button id="boton-calcular">Calcular</button>
+        <form>
+            <input type="number" name="" class="formularios" id="salario-anual" placeholder="Ingrese su salario anual">
+            <input type="text" class="formularios" id="salario-mensual" disabled placeholder="Salario mensual">
+            <button class="botones" id="boton-calcular">Calcular</button>
         </form>   
     </main>
     
 
-    <script src="clase5-p1.js"></script> 
+    <script>
+        const $BOTON_CALCULAR = document.querySelector("#boton-calcular")
+
+        function CALCULAR_SALARIO_MENSUAL(SALARIO_ANUAL){
+            return SALARIO_ANUAL / 12;
+        }
+
+        $BOTON_CALCULAR.onclick = () => {
+            const $SALARIO_ANUAL = +document.querySelector("#salario-anual").value;
+            const SALARIO_MENSUAL = CALCULAR_SALARIO_MENSUAL($SALARIO_ANUAL);
+            document.querySelector("#salario-mensual").value = SALARIO_MENSUAL 
+            return false    
+        }
+    </script> 
 </body>
 </html>
