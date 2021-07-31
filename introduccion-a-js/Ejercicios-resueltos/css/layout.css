@@ -27,6 +27,7 @@ body{
         padding: 20px;
         box-shadow: 2px 2px 10px var(--color-menu);
     }
+
     .botones{
         background: linear-gradient(to right, var(--color-header-1), var(--color-header-2));
         height: 60px;
@@ -53,3 +54,4 @@ body{
         font-size: 20px;
         text-align: center;
     }
+    
