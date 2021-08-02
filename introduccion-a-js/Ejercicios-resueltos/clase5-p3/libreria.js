@@ -3,9 +3,10 @@ export function crearElemento( elem, atributo = {}) {
     const elemento = document.createElement(elem);
     //elemento.id = atributo.id;
     elemento.type = atributo.type
-    elemento.max = atributo.max
     elemento.classList.add(atributo.className)
     elemento.placeholder = atributo.placeholder
+    elemento.for = atributo.for
+    elemento.innerText = atributo.for
     return elemento
 }
 

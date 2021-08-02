@@ -1,7 +1,7 @@
 main{
     display: grid;
     grid-column: 1fr;
-    grid-row: 3;
+    grid-row: 1fr 1fr;
     grid-gap: 20px;
 }
     .cuerpo{
@@ -14,4 +14,12 @@ form{
     display: grid;
     grid-column: auto;
     grid-row: 3fr;
+}
+#input{
+    display: grid;
+    flex-wrap: nowrap;
+    grid-column: 1;
+    grid-row: 2;
+    grid-template-rows: subgrid;
+    grid-gap: 30px;
 }

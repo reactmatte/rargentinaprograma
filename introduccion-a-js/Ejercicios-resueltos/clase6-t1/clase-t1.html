@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("../css/variables.css");
+        @import url("../css/layout.css");
+      
+
+        #inputs{
+            display: flexbox;
+            flex-flow: column nowrap;
+            align-content: space-between;
+            width: 300px
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p class="header">
+           r/argentinaprograma Clase 6 - Tarea 1 
+        </p>
+        <p>
+            TAREA: Empezar preguntando cuánta gente hay en el grupo familiar.
+            Crear tantos inputs+labels como gente haya para completar la edad de cada integrante.
+            Al hacer click en "calcular", mostrar en un elemento pre-existente la mayor edad, la menor edad y el promedio del grupo familiar.
+    
+            Punto bonus: Crear un botón para "empezar de nuevo" que empiece el proceso nuevamente, borrando los inputs ya creados 
+            (investigar cómo en MDN).
+        </p>
+        <div class="footer">
+            <form action="">
+                <label for="cantidad-familiares">Ingresa la cantidad de personas en la familia</label><br>
+                <input type="number" placeholder="Cantidad de familiares" class="formularios" id="cantidad-familiares">
+                <input type="button" value="Agregar" class="botones" id="boton-agregar">
+                <input type="button" value="Calcular edades" class="botones" id="boton-calcular">
+            </form>
+            <div id="inputs">
+
+            </div>
+        </div>
+    </main>
+    <script src="clase-t1.js" type="module"></script>
+</body>
+</html>
