@@ -6,7 +6,7 @@ export function crearElemento( elem, atributo = {}) {
     elemento.classList.add(atributo.className)
     elemento.placeholder = atributo.placeholder
     elemento.for = atributo.for
-    elemento.innerText = atributo.for
+    elemento.innerText = atributo.innerText
     return elemento
 }
 
